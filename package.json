@@ -4,7 +4,10 @@
 	"description": "A project for Typescript practice",
 	"main": "main.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc",
+		"start": "node dist/main.js",
+		"build-and-start": "npm run build && npm run start"
 	},
 	"author": "Sangjin Noah Kim",
 	"license": "ISC",
