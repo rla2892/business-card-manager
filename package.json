@@ -1,0 +1,11 @@
+{
+  "name": "business-card-manager",
+  "version": "1.0.0",
+  "description": "A project for Typescript practice",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sangjin Noah Kim",
+  "license": "ISC"
+}
