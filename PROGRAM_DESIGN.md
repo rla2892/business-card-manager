@@ -31,14 +31,30 @@
   - **필드**: `name?`, `company?`, `title?` 등 (옵셔널 필드로 구성)
 
 ### 파일 구조
-
-- src/
-  - models/
-    - BusinessCard.ts (명함 클래스 정의)
-- services/
-  - BusinessCardManager.ts (명함 관리 클래스 정의)
-- interfaces/
-  - CardCriteria.ts (검색 조건 인터페이스 정의)
-- utils/
-  - FileHandler.ts (파일 입출력 관련 유틸리티)
-- main.ts (프로그램의 진입점, CLI 인터페이스 정의)
+```plaintext
+- business-card-manager/
+	- src/						# 소스 코드가 위치하는 폴더
+		- models/				# 데이터 모델(클래스, 인터페이스) 정의
+			- BusinessCard.ts	# 명함 클래스 정의
+		- interfaces/			# TypeScript 인터페이스 정의
+			- CardCriteria.ts	# 검색 조건 인터페이스 정의
+			
+		- services/				# 비즈니스 로직을 처리하는 서비스 계층
+			- BusinessCardManager.ts	# 명함 관리 클래스 정의
+		- utils/				# 유틸리티 함수, 헬퍼 함수
+			- FileHandler.ts	# 파일 입출력 관련 유틸리티
+		- commands/				# CLI 명령어를 처리하는 모듈
+		- config/				# 설정 파일 (환경 설정, 설정 상수 등)
+		- main.ts				# 프로그램의 진입점
+	- tests/					# 테스트 파일
+		- unit/					# 유닛 테스트
+		- integration/			# 통합 테스트
+	- dist/						# 빌드된 결과물이 위치하는 폴더 (일반적으로 컴파일된 JS 파일)
+	- node_modules/				# npm 패키지들이 설치되는 디렉터리
+	- .gitignore				# Git에서 추적하지 않을 파일/폴더 목록
+	- package.json				# 프로젝트 메타데이터 및 의존성 정보
+	- tsconfig.json				# TypeScript 컴파일러 설정 파일
+	- .eslintrc.json			# ESLint 설정 파일
+	- README.md					# 프로젝트 설명 파일
+	- PROGRAM_DESIGN.md			# 프로그램 설계 문서
+```
