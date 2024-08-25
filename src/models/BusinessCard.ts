@@ -1,16 +1,16 @@
 // Make BusinessCard class
 export class BusinessCard {
-	name: string;
-	email: string;
-	phone: string;
-	company: string;
-	constructor(name: string, email?: string, phone?: string, company?: string) {
+	constructor(
+		public name: string,
+		public email?: string,
+		public phone?: string,
+		public company?: string) {
 		this.name = name;
 		this.email = email || '';
 		this.phone = phone || '';
 		this.company = company || '';
 	}
-	display() {
+	public printCard(): void {
 		let displayString;
 		displayString = `
 		-----------------------------
