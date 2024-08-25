@@ -1,4 +1,7 @@
 // eslint.config.js
+
+const typescriptParser = require("@typescript-eslint/parser");
+
 module.exports = [
   {
     ignores: ["node_modules/**", "dist/**"],
@@ -8,6 +11,7 @@ module.exports = [
     languageOptions: {
       ecmaVersion: 2020,
       sourceType: "module",
+      parser: typescriptParser,
     },
     plugins: {
       "@typescript-eslint": require("@typescript-eslint/eslint-plugin"),
