@@ -13,6 +13,7 @@
 	"author": "Sangjin Noah Kim",
 	"license": "ISC",
 	"devDependencies": {
+		"@types/node": "^22.5.0",
 		"@typescript-eslint/eslint-plugin": "^8.2.0",
 		"@typescript-eslint/parser": "^8.2.0",
 		"eslint": "^9.9.1",
