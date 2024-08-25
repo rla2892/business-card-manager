@@ -19,7 +19,7 @@ export class BusinessCard {
 		| Phone: ${this.phone}
 		| Company: ${this.company}
 		-----------------------------
-		`
+		`;
 		console.log(displayString);
 	}
 }
