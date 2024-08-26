@@ -39,6 +39,13 @@ function startQuestion() {
 			// If the key is 'l', list all business cards
 			businessCardService.listCards();
 			startQuestion();
+		} else if (keyInput === 'd') {
+			// If the key is 'd', delete a business card
+			consoleReader.question(`Enter business card name to delete : `, (name) => {
+				businessCardService.deleteCard(name);
+				console.log(`Business card deleted!`);
+				startQuestion();
+			});
 		} else {
 			startQuestion();
 		}

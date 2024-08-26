@@ -23,4 +23,7 @@ export class BusinessCardManager {
 			card.printCard();
 		}
 	}
+	public deleteCard(name: string): void {
+		this.businessCards = this.businessCards.filter(card => card.name !== name);
+	}
 }
