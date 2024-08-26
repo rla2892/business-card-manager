@@ -4,6 +4,7 @@
 		"rootDir": "./src",
 		"target": "es6",
 		"module": "commonjs",
+		"sourceMap": true,
 		"strict": true
 	},
 	"include": ["src/**/*"],

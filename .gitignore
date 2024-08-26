@@ -33,7 +33,7 @@ jspm_packages/
 .env
 
 # IDEs and editors
-.vscode/
+# .vscode/
 .idea/
 .DS_Store
 
