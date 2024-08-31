@@ -12,7 +12,7 @@ const consoleReader = readline.createInterface({
 const businessCardService = new BusinessCardManager(); 
 
 function startQuestion() {
-	consoleReader.question(`Press 'q' to exit, 'l' to list, 'n' to add. \nInput : `, (keyInput) => {
+	consoleReader.question(`Press 'q' to exit, 'l' to list, 'n' to add. 'd' to delete, 's' to save, 'r' to load. \nInput : `, (keyInput) => {
 		keyInput = keyInput.toLowerCase();
 		if (keyInput === 'q') {
 			// If the key is 'q', exit the program
@@ -46,6 +46,14 @@ function startQuestion() {
 				console.log(`Business card deleted!`);
 				startQuestion();
 			});
+		} else if (keyInput === 's') {
+			// If the key is 's', save the business cards
+			businessCardService.saveCards();
+			startQuestion();
+		} else if (keyInput === 'r') {
+			// If the key is 'l', load the business cards
+			businessCardService.loadCards();
+			startQuestion();
 		} else {
 			startQuestion();
 		}
